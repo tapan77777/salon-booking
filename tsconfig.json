@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "lib/firebase/config.js", "lib/firebase/firestore.js", "src/app/page.js", "src/app/(customer)/page.js", "lib/hooks/useStats.js", "lib/hooks/useServices.js", "lib/hooks/useBookings.js", "lib/hooks/useCustomers.js", "lib/hooks/useAuth.js"],
   "exclude": ["node_modules"]
 }
