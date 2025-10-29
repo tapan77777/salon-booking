@@ -1,6 +1,7 @@
 'use client';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { Eye, EyeOff, Sparkles } from 'lucide-react';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { auth } from '../../../lib/firebase/config';
@@ -66,7 +67,7 @@ export default function AdminLogin() {
           </div>
 
           <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-2">
+            <label className="block text-sm font-semibold text-black-700 mb-2">
               Password
             </label>
             <div className="relative">
@@ -104,9 +105,9 @@ export default function AdminLogin() {
         </form>
 
         <div className="mt-6 text-center">
-          <a href="/" className="text-sm text-purple-600 hover:underline">
+          <Link href="/" className="text-sm text-purple-600 hover:underline">
             ← Back to website
-          </a>
+          </Link>
         </div>
       </div>
     </div>

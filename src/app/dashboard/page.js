@@ -7,6 +7,7 @@ import {
   TrendingUp,
   UserPlus
 } from 'lucide-react';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { getBookings, getTodayStats, updateBookingStatus } from '../../../lib/firebase/firestore';
 
@@ -109,11 +110,11 @@ useEffect(() => {
         <div className="flex justify-between items-center">
           <div>
             <h2 className="text-2xl font-bold text-gray-800">Dashboard</h2>
-            <p className="text-gray-600">Welcome back! Here's what's happening today.</p>
+            <p className="text-gray-600">Welcome back! Heres whats happening today.</p>
           </div>
           <div className="flex items-center gap-4">
             <div className="text-right">
-              <p className="text-sm text-gray-600">Today's Date</p>
+              <p className="text-sm text-gray-600">Todays Date</p>
               <p className="font-semibold text-gray-800">
                 {new Date().toLocaleDateString('en-IN', { 
                   weekday: 'short', 
@@ -223,7 +224,7 @@ useEffect(() => {
           <div className="p-6 border-b border-gray-100">
             <div className="flex justify-between items-center">
               <div>
-                <h3 className="text-lg font-bold text-gray-800">Today's Bookings</h3>
+                <h3 className="text-lg font-bold text-gray-800">Todays Bookings</h3>
                 <p className="text-sm text-gray-600">Manage and track all appointments</p>
               </div>
               <button
@@ -240,12 +241,12 @@ useEffect(() => {
               <Calendar className="w-12 h-12 text-gray-300 mx-auto mb-3" />
               <p className="text-gray-500 text-lg font-semibold">No bookings for today yet</p>
               <p className="text-sm text-gray-400 mt-1">Bookings will appear here when customers book</p>
-              <a
+              <Link
                 href="/"
                 className="inline-block mt-4 text-purple-600 hover:text-purple-700 text-sm font-medium"
               >
                 View Customer Page →
-              </a>
+              </Link>
             </div>
           ) : (
             <div className="overflow-x-auto">

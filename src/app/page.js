@@ -407,7 +407,7 @@ export default function SalonHomePage() {
                     </span>
                   </div>
                   <p className="text-xs text-gray-500 mt-1">
-                    *Actual discount will be applied if you're a first-time customer
+                    Actual discount will be applied if youre a first-time customer
                   </p>
                 </div>
               </div>
