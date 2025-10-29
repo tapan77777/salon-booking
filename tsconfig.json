@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "lib/firebase/config.js", "lib/firebase/firestore.js", "src/app/page.js", "src/app/(customer)/page.js", "lib/hooks/useStats.js", "lib/hooks/useServices.js", "lib/hooks/useBookings.js", "lib/hooks/useCustomers.js", "lib/hooks/useAuth.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "lib/firebase/config.js", "lib/firebase/firestore.js", "src/app/page.js", "src/app/(customer)/page.jsx", "lib/hooks/useStats.js", "lib/hooks/useServices.js", "lib/hooks/useBookings.js", "lib/hooks/useCustomers.js", "lib/hooks/useAuth.js, "src/app/(admin)/services/page.js", "src/app/(admin)/customers/page.js""],
   "exclude": ["node_modules"]
 }
